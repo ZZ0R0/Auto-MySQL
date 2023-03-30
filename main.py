@@ -2,13 +2,13 @@ import mysql.connector
 import openai
 import os
 
-openai.api_key = "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"
+openai.api_key = "your openai Api key"
 
 mydb = mysql.connector.connect(
-    host="localhost",
-    user="robin",
-    password="Spartan0912",
-    database="test")
+    host="Server IP or localhost",
+    user="MySQL username",
+    password="MySQL password",
+    database="Database Name")
 
 cursor = mydb.cursor()
 
